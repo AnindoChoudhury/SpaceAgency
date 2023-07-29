@@ -1,0 +1,835 @@
+/* Home CSS */
+.home-body {
+  overflow-y: scroll;
+  background-image: url("./assets/home/background-home-desktop.jpg");
+  background-size: 100% 100%;
+  padding: 1rem;
+  color : white; 
+  background-repeat: no-repeat;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+.indicator
+{
+  background-color: white;
+  width : 100%;
+  height : 5px;
+  border-radius: 10px;
+  position : relative;
+  top :23px;
+}
+.hidden
+{
+  display : none; 
+}
+.links{
+  text-decoration: none;
+  color: white;
+  font-family: "Karla", sans-serif;
+}
+.index {
+  font-weight: bold;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-options > ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding : 0; 
+  margin-bottom : 0; 
+}
+.nav-options {
+  background-color: rgb(164, 146, 146, 0.2);
+  backdrop-filter: blur(10px);
+  padding : 1.6rem 8rem;
+}
+
+.line
+{
+  background-color: rgb(203, 185, 185,0.2);
+  height : 0.1rem ; 
+  width : 50rem;
+  position: absolute;
+  left : 13%;
+}
+.bi-list{
+  display: block;
+  color : white;
+  height : 100%; 
+  width : 3rem; 
+  display : none; 
+}
+.hamburger > ul 
+{ 
+  display: flex;
+  flex-direction: column;
+  padding : 0;
+  margin :0; 
+  gap : 1rem; 
+  align-items: center;
+  font-family: 'Karla', sans-serif;
+}
+.hamburger
+{
+  background-color: rgb(164, 146, 146, 0.2);
+  border-radius : 30px; 
+  padding : 2rem 4rem; 
+  display : none;
+  backdrop-filter:blur(3px);
+  z-index: 2;
+  width : 60%; 
+  position : absolute;
+  right : 2rem; 
+  margin-top : 1.4rem; 
+}
+
+.bi-list:hover
+{
+  cursor: pointer;
+}
+.content
+{
+  color : white; 
+  margin-top : 20vh;
+  display : flex;  
+}
+
+.text h3
+{
+  font-family: 'Montserrat', sans-serif;
+}
+.text h1
+{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 6.8rem;
+  letter-spacing: 2rem;
+  margin-left: 1.6rem;
+}
+.text p
+{
+  margin-left : 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+.explore-container
+{
+   display : flex; 
+   align-items: center;
+}
+.explore
+{
+  background-color: white; 
+  width : 40%; 
+  margin-left : 50%;
+  border-radius : 100%; 
+  padding : 6rem 1rem; 
+  display : flex; 
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 100px 15px rgb(146, 138, 138);
+}
+.explore > h4
+{
+  font-family: 'Montserrat', sans-serif;
+  color:black;
+  margin : 0; 
+  font-size : 2rem;
+  display: inline;
+}
+
+
+/* Large screen adaption  */
+@media(min-width : 1201px)
+{
+   .home-body 
+   {
+      height : 100vh; 
+   }
+}
+/* Tablet adaption  */
+@media (max-width : 1200px)
+{
+    .home-body 
+    {
+      background-image: url("./assets/home/background-home-tablet.jpg");
+      background-size: cover;
+      overflow-x: hidden;
+      overflow-y: visible;
+      height : 110vh;
+        
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      margin-top : 0; 
+    }
+    .nav-options
+    {
+      background-color: rgb(164, 146, 146, 0.1);
+      backdrop-filter: blur(20px);
+      padding : 1.4rem 2rem;
+      margin-top : 0; 
+    }
+    .nav-options > ul {
+       gap : 2rem;
+    }
+    .logo
+    {
+      margin-left : 2rem; 
+    }
+    .text h3  
+    {
+      text-align: center;
+    }
+    .text h1 
+    {
+      text-align: center;
+    }
+    .text p
+    {
+      text-align: center;
+    }
+    .explore-container
+    {
+      margin-top : 10vh;
+      display: flex;
+      justify-content: center;
+    }
+    .explore
+    {
+      background-color: white; 
+      width : 30%; 
+      height : 30%;
+      margin : auto; 
+      border-radius : 100%; 
+      padding : 6rem 1rem; 
+      display : flex; 
+      justify-content: center;
+      align-items: center;
+      box-shadow: 1px 1px 100px 15px rgb(146, 138, 138);
+    }
+    .content
+    {
+      margin-top : 10rem;
+    }
+}
+
+/* Mobile adaption */
+
+@media (max-width : 733px)
+{
+    .home-body{
+      background-image: url("./assets/home/background-home-mobile.jpg");
+      margin : 0; 
+      padding : 1rem; 
+      background-size: cover;
+      overflow-y: visible;
+      height : 130vh;  
+      overflow-x : hidden;
+    }
+    .nav-options
+    {
+      display: none;
+    }
+    .logo 
+    {
+      margin : 1rem;
+    }
+    .text h3 
+    {
+      font-size: 1.4rem;
+      text-align:center;
+      padding-bottom : 2rem;
+    }
+    .text h1 
+    {
+      font-size: 5rem;
+      text-align : center;
+      margin : auto;
+      letter-spacing: normal;
+      padding-bottom: 2rem;
+    }
+    .text p 
+    {
+      text-align: center;
+      margin : 0;
+      line-height: 2rem;
+    }
+    .explore-container
+    {
+      display : flex; 
+      justify-content: center;
+      margin-top : 60%;
+    }
+    .explore
+    {
+      height : 50%; 
+      width: 36%; 
+      padding : 4rem 3rem;
+      margin : 0; 
+      box-shadow : 1px 1px 30px 4px rgb(146, 138, 138);
+    }
+    .explore h4 
+    {
+      font-size : 1rem;
+      font-weight: bold;
+    }
+    
+    .content
+    {
+      margin-top : 3rem;
+    }
+    .bi-list
+    {
+      display : block; 
+      margin-right : 1rem;
+    }
+}
+
+/* extra small devices adaption */
+@media  (max-width : 380px)
+{
+    .home-body 
+    {
+       height : 150vh;
+    }
+    .explore-container
+    {
+      margin-top: 20vh;
+    }
+    .text h3  
+    {
+      font-size : 1rem; 
+    }
+    .text h1
+    {
+        font-size : 3rem;
+    }
+    .text p 
+    {
+      font-size : 1rem; 
+    }
+}
+
+/* Destination CSS */
+
+.destination-body
+{
+  font-family: 'Montserrat', sans-serif;
+  overflow-y: scroll;
+  padding : 1rem; 
+  background-image: url("./assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.destination 
+{
+  margin-top : 4%; 
+}
+.first-line
+{
+  font-family: 'Montserrat', sans-serif;
+  color : white; 
+  font-size : 1.8rem;
+}
+.first-line span
+{
+   font-weight: bold;
+   margin-right : 1rem;
+   color : grey;
+   height: 100%;
+}
+.destination-list
+{
+  display : flex; 
+  gap : 3rem;
+  color : white; 
+  padding-left: 0;
+}
+.destination-des
+{
+  margin-top : 3rem; 
+  color : white;
+}
+.destination-des > h2
+{
+   font-size : 4rem;
+   font-family: 'Lora', serif;
+}
+.destination-des p
+{
+  width : 90%;
+  font-family: 'Montserrat', sans-serif;
+  font-size : 1.2rem;
+  margin-top : 1rem;
+}
+.destination-distance
+{
+  color : white; 
+  margin-top : 3rem;
+}
+.destination-distance span
+{
+  font-size: 2rem;
+}
+.destination-indicator
+{
+  background-color: white;
+  width : 100%;
+  height : 2px;
+  border-radius: 10px;
+  position: relative;
+  top: 10px;
+}
+.destination-links
+{
+  text-decoration: none;
+  color : white; 
+  font-family:'Montserrat', sans-serif; ;
+}
+/* Large screen adaption  */
+@media(min-width : 1201px)
+{
+   .destination-body 
+   {
+      height : 100vh; 
+   }
+}
+/* Tablet adaption */
+@media screen and (max-width : 1200px) and (orientation : portrait)
+{
+  .destination-body
+  {
+    padding-bottom : 100px; 
+    background-attachment : fixed;
+  }
+  .destination
+  {
+    margin-top : 6rem; 
+  }
+  .planet-pic
+  {
+    height : 40vh; 
+  }
+  .destination-list
+  {
+     justify-content: center;
+  }
+  .destination-content 
+  {
+    margin-top : 3rem;
+  }
+  .destination-des 
+  {
+    text-align: center;
+    display : flex; 
+    flex-direction: column;
+    align-items: center;
+  } 
+  .destination-distance
+  {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width : 1200px) and (orientation : landscape)
+{
+  .destination-body
+  {
+    background-attachment: fixed;
+  }
+  .destination-list
+  {
+     justify-content: center;
+  }
+  .destination-content 
+  {
+    margin-top : 3rem;
+  }
+  .destination-des 
+  {
+    text-align: center;
+    display : flex; 
+    flex-direction: column;
+    align-items: center;
+  } 
+  .destination-distance
+  {
+    text-align: center;
+  }
+}
+/* mobile adapt */
+@media screen and (max-width : 733px) and (orientation : portrait)
+{
+  .destination-body
+  {
+    overflow-x: hidden;
+  }
+    .destination-des > p 
+    {
+      font-size : 1rem;
+    }
+    
+    .destination-distance span 
+    {
+      font-size : 1.4rem;
+    }
+    
+    .destination-distance p 
+    {
+      font-size : 0.8rem ;
+    }
+    .first-line
+    {
+      text-align: center;
+    }
+}
+/* Extra small adaption  */
+@media (max-width : 380px)
+{
+   .destination-list
+   {
+       gap : 1rem;
+       font-size : 0.8rem;
+   }
+   .destination-des h2
+   {
+      font-size : 3rem;
+   }
+   .destination-des p 
+   {
+    font-size : 0.9rem;
+   }
+   .planet-pic 
+   {
+       height : 30vh;
+   }
+}
+
+/* Crew css */
+
+.crew-body
+{
+  background-image: url("./assets/crew/background-crew-desktop.jpg");
+  background-size : cover; 
+  background-repeat: no-repeat;
+  color : white; 
+  padding : 1rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-attachment: fixed;
+  overflow-y: scroll;
+  width : 100%; 
+}
+
+.crew 
+{
+  margin-top : 4%; 
+}
+.crew-description
+{
+   padding-top : 6rem; 
+}
+.crew-role
+{
+   color : rgba(212, 196, 196, 0.3);
+   font-family: 'Karla', sans-serif;
+   font-size : 2rem;
+}
+
+.crew-name
+{
+  font-size : 2.5rem; 
+  font-family: 'Lora', serif;
+  letter-spacing: 0.1rem;
+  margin-top: 1.3rem;
+}
+
+.crew-about
+{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2rem;
+  margin-top : 2rem;
+}
+
+.crew-image 
+{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.crew-person
+{
+  height : 90%;  
+}
+
+.crew-btn-container
+{
+  display: flex; 
+  gap : 0.7rem; 
+  padding : 0; 
+  margin-top : 9rem;
+}
+.crew-btn
+{
+  background-color: rgb(173, 156, 156,0.5);
+  height : 1.5rem;
+  border-radius: 100%;
+  gap : 10rem;
+}
+.white
+{
+  background-color : white;
+}
+.crew-btn:hover
+{
+  background-color: rgb(230, 220, 220,0.7);
+}
+
+/* Tablet adaption */
+@media screen and (max-width : 1200px) and (orientation : portrait)
+{
+    .crew-description
+    {
+       text-align: center;
+    }
+    .crew-btn-container
+    {
+      margin-top : 5rem; 
+      justify-content: center;
+    }
+}
+@media screen and (max-width : 1200px) and (orientation : landscape)
+{
+    .crew-description
+    {
+       text-align: center;
+    }
+    .crew-btn-container
+    {
+      margin-top : 5rem; 
+      justify-content: center;
+    }
+}
+
+/* Mobile adaption */
+
+@media screen and (max-width : 733px) and (orientation : portrait)
+{
+  .crew-body
+  {
+    background-attachment: fixed;
+  }
+  .crew-image
+  {
+    margin-top : 5rem; 
+  }
+    .crew-person
+    {
+       height : 20rem; 
+    }
+    .crew-description
+    {
+      padding-top: 4rem;
+    }
+    .crew
+    {
+      padding-bottom: 3rem;
+    }
+    .crew-name 
+    {
+      font-size : 2rem;
+    }
+}
+
+
+/* Tech CSS */
+
+.tech-body 
+{
+  background-image: url("./assets/technology/background-technology-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll;
+  color : white;  
+  padding-bottom:100px;
+}
+.technology
+{
+  margin-top : 4%; 
+}
+.tech-btn-container
+{
+  display : inline-flex; 
+  flex-direction: column;
+  align-items : flex-start; 
+  gap : 2rem;
+  margin-top : 6rem; 
+  padding:0; 
+}
+
+.tech-btn 
+{
+  border-radius : 100%; 
+  height : 4rem;
+  width : 4rem;  
+  background-color : transparent;
+  color : white;
+  border : 1px solid white;
+  font-size : 2rem;
+  font-weight: 200;
+  font-family: 'Karla', sans-serif;
+}
+.tech-hover
+{ 
+  background-color: rgb(104, 96, 96,0.3);
+  color : black;
+}
+.empty-fluid
+{
+  animation : empty 2s ease-in-out; 
+}
+
+
+.white 
+{ 
+  background-color: white;
+  color : black;
+}
+.terminology 
+{ 
+   margin-top : 6rem; 
+}
+.tech-img-container
+{
+  display : flex; 
+  justify-content: center;
+}
+.tech-image
+{
+  border-radius : 30px;
+  box-shadow: 1px 1px 90px 1px rgb(201, 167, 15,0.8)  ; 
+  /* rgb(201, 167, 15,0.8) */
+  /* rgba(52, 144, 255, 0.8) */
+  /* rgba(31, 251, 255, 0.8) */
+  width : 100%; 
+  height : 100%; 
+}
+.terminology p 
+{ 
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom : 0; 
+}
+.term 
+{ 
+  letter-spacing : 0.1rem;
+}
+.terminology h2 
+{ 
+  margin-top : 0.4rem;
+}
+
+.term-description 
+{
+   margin-top : 1rem; 
+   line-height: 2rem;
+}
+/* Tablet adaption starts */
+@media screen and (max-width : 1200px) and (orientation : portrait)
+{
+    .tech-img-container
+    {
+      display : flex; 
+      justify-content: center;
+    }
+    
+    .tech-des
+    {
+      margin-top : 5rem; 
+    }
+
+    .tech-btn-container
+    {
+        flex-direction: row;
+        justify-content: center;
+        margin-top : 2.5rem;
+        padding : 2rem; 
+    }
+    .terminology
+    {
+      margin-top : 2rem;
+      text-align: center; 
+    }
+    .tech-btn 
+    { 
+      width : 100px;
+       
+    }
+}
+
+@media screen and (max-width : 1200px) and (orientation : landscape)
+{
+  .tech-img-container
+  {
+    height : 100%; 
+    width : 100%;
+  }
+   .tech-image
+   {
+    height : 100%; 
+    width : 100%; 
+   }
+}
+/* Tablet adaption ends */
+
+/* Mobile adaption  */
+@media screen and (max-width : 900px) and (orientation : portrait)
+{
+   .tech-btn 
+   { 
+     height : 2rem; 
+     width : 2rem; 
+     font-size : 1rem; 
+   }
+}
+@media screen and (max-width : 950px) and (orientation : landscape)
+{ 
+  .tech-des
+  {
+     margin-top : 5rem; 
+  }
+  .tech-image
+   {
+      height : 100%; 
+      width : 60%; 
+   }
+   .tech-btn-container
+   {
+      flex-direction : row ; 
+      justify-content: center;
+      
+      margin-top : 2rem;
+   }
+   .tech-btn  
+   {
+      height : 3rem; 
+      width : 3rem; 
+      font-size : 1.4rem; 
+   }
+   .terminology
+   {
+     margin-top : 2rem; 
+     text-align: center;
+   }
+}

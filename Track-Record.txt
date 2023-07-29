@@ -1,0 +1,19 @@
+Day 1 - Home UI
+
+Day 2 - Responsive Home page with JS Powered indicators 
+
+Day 3 - Responsive design for SE S8+
+        Collapse Button
+        Destination Moon page with indicator
+
+Day 4 - Completed Destination Page 
+
+Day 5 - Crew Page 
+
+Day 6 - Finished building the technology page. Full site completed.
+
+Day 7 - Hamburger menu for mobile with animation. 
+
+far from any road
+
+
